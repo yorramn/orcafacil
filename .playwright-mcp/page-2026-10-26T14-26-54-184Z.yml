@@ -1,0 +1,87 @@
+- generic [ref=f1e4]:
+  - complementary [ref=f1e5]:
+    - navigation [ref=f1e6]:
+      - list [ref=f1e7]:
+        - listitem [ref=f1e8]:
+          - link "Dashboard" [ref=f1e9] [cursor=pointer]:
+            - /url: "#"
+        - listitem [ref=f1e15]:
+          - link "Chat" [ref=f1e16] [cursor=pointer]:
+            - /url: chat.html
+        - listitem [ref=f1e19]:
+          - link "Inbox" [ref=f1e20] [cursor=pointer]:
+            - /url: inbox.html
+        - listitem [ref=f1e24]:
+          - link "Calendar" [ref=f1e25] [cursor=pointer]:
+            - /url: calendar.html
+        - listitem [ref=f1e29]:
+          - link "Profile" [ref=f1e30] [cursor=pointer]:
+            - /url: profile.html
+        - listitem [ref=f1e33]:
+          - link "Settings" [ref=f1e34] [cursor=pointer]:
+            - /url: settings.html
+      - list [ref=f1e39]:
+        - listitem [ref=f1e40]:
+          - link "UI Elements" [ref=f1e41] [cursor=pointer]:
+            - /url: "#"
+        - listitem [ref=f1e49]:
+          - link "Form Elements" [ref=f1e50] [cursor=pointer]:
+            - /url: "#"
+        - listitem [ref=f1e63]:
+          - link "Data tables" [ref=f1e64] [cursor=pointer]:
+            - /url: data-tables.html
+        - listitem [ref=f1e67]:
+          - link "Charts" [ref=f1e68] [cursor=pointer]:
+            - /url: charts.html
+        - listitem [ref=f1e72]:
+          - link "Auth Pages" [ref=f1e73] [cursor=pointer]:
+            - /url: "#"
+  - banner [ref=f1e79]:
+    - link [ref=f1e81] [cursor=pointer]:
+      - /url: index.html
+      - img "Logo" [ref=f1e82]
+    - generic [ref=f1e93]:
+      - generic [ref=f1e96]:
+        - button [ref=f1e97] [cursor=pointer]
+        - textbox "Type to search..." [ref=f1e101]
+      - generic [ref=f1e102]:
+        - list [ref=f1e103]:
+          - listitem [ref=f1e104]:
+            - generic [ref=f1e105]:
+              - checkbox "Sun" [ref=f1e106] [cursor=pointer]
+              - img "Sun" [ref=f1e107]
+          - listitem [ref=f1e108]:
+            - link [ref=f1e109] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=f1e115]:
+            - link [ref=f1e116] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=f1e122]:
+            - link [ref=f1e123] [cursor=pointer]:
+              - /url: "#"
+        - link "Thomas Anree UX Designer User" [ref=f1e130] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=f1e131]:
+            - generic [ref=f1e132]: Thomas Anree
+            - generic [ref=f1e133]: UX Designer
+          - img "User" [ref=f1e135]
+  - main [ref=f1e138]:
+    - generic [ref=f1e141]:
+      - generic [ref=f1e143]:
+        - heading "Log In" [level=2] [ref=f1e144]
+        - generic [ref=f1e145]:
+          - generic [ref=f1e146]:
+            - generic [ref=f1e147]: Email Address
+            - textbox [ref=f1e148]
+          - generic [ref=f1e149]:
+            - generic [ref=f1e150]: Your Password
+            - textbox [ref=f1e151]
+          - button "Log In" [ref=f1e153] [cursor=pointer]
+        - generic [ref=f1e154]:
+          - link "Forget Password?" [ref=f1e155] [cursor=pointer]:
+            - /url: "#"
+          - paragraph [ref=f1e156]:
+            - text: Not a member yet?
+            - link "Register" [ref=f1e157] [cursor=pointer]:
+              - /url: signup.html
+      - heading "Hey Welcome Back" [level=3] [ref=f1e161]

@@ -1,0 +1,55 @@
+{
+  "interface_type": "navigation",
+  "interface_type_note": "Auditoria manual das telas de edição, visualização, versões e link, e dos diálogos de confirmação; sem chave da API uxui-evaluator.",
+  "overall_score": 49,
+  "band": "fair",
+  "findings": [
+    {
+      "id": "finding-1",
+      "principle": { "code": "C.1.4.01", "slug": "error-prevention", "title": "Error Prevention", "part": "part-2" },
+      "severity": "critical",
+      "message": "A ação de envio aparecia mesmo sem e-mail cadastrado e o servidor marcava o orçamento como enviado sem entregar mensagem.",
+      "remediation": "Exibir Baixar orçamento no lugar de Enviar orçamento quando faltar e-mail e bloquear o envio no servidor.",
+      "business_impact": null
+    },
+    {
+      "id": "finding-2",
+      "principle": { "code": "F.1.1.03", "slug": "mental-model", "title": "Mental Model", "part": "part-1" },
+      "severity": "critical",
+      "message": "O link público desaparecia após a primeira navegação, apesar de a interface sugerir que poderia ser copiado novamente.",
+      "remediation": "Guardar o token criptografado, oferecer Gerar link e manter Copiar novamente nas telas e no menu da lista.",
+      "business_impact": null
+    },
+    {
+      "id": "finding-3",
+      "principle": { "code": "C.1.1.01", "slug": "consistency-and-standards", "title": "Consistency and Standards", "part": "part-2" },
+      "severity": "warning",
+      "message": "Confirmações de reenvio, revogação e cobrança usavam o alerta nativo, quebrando o padrão do sistema.",
+      "remediation": "Usar ConfirmModal centralizado com Não e Sim, foco controlado e proteção durante processamento.",
+      "business_impact": null
+    },
+    {
+      "id": "finding-4",
+      "principle": { "code": "D.2.1.02", "slug": "visual-hierarchy", "title": "Visual Hierarchy", "part": "part-3" },
+      "severity": "warning",
+      "message": "A página de versões repetia eventos em dois blocos e dava destaque a ações indisponíveis, dificultando localizar o link e o histórico.",
+      "remediation": "Manter uma lista de eventos, mostrar valor por versão e destacar copiar ou gerar link no painel lateral.",
+      "business_impact": null
+    },
+    {
+      "id": "finding-5",
+      "principle": { "code": "D.1.1.01", "slug": "progressive-disclosure", "title": "Progressive Disclosure", "part": "part-3" },
+      "severity": "warning",
+      "message": "O formulário de edição acumulava upload de arquivos em um painel que não recebia anexos do servidor; a visualização também oferecia upload.",
+      "remediation": "Concentrar upload e prévia de mídia na visualização e deixar na edição apenas um caminho direto para essa seção.",
+      "business_impact": null
+    }
+  ],
+  "strengths": [
+    { "principle": { "code": "I.2.2.02", "slug": "fitts-law", "title": "Fitts's Law" }, "message": "O menu de ações e os diálogos usam alvos de toque com pelo menos 44 px." },
+    { "principle": { "code": "C.1.1.01", "slug": "consistency-and-standards", "title": "Consistency and Standards" }, "message": "Os painéis reutilizam tipografia, cores e bordas do sistema." }
+  ],
+  "priority_fixes": ["finding-1", "finding-2", "finding-3", "finding-4", "finding-5"],
+  "api_enriched": false,
+  "api_note": "Auditoria aplicada manualmente porque UXUI_API_KEY não está configurada. Os cinco ajustes foram implementados nas páginas e componentes correspondentes."
+}

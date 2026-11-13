@@ -1,0 +1,227 @@
+- generic [ref=f2e4]:
+  - complementary [ref=f2e5]:
+    - navigation [ref=f2e6]:
+      - list [ref=f2e7]:
+        - listitem [ref=f2e8]:
+          - link "Dashboard" [ref=f2e9] [cursor=pointer]:
+            - /url: "#"
+        - listitem [ref=f2e15]:
+          - link "Chat" [ref=f2e16] [cursor=pointer]:
+            - /url: chat.html
+        - listitem [ref=f2e19]:
+          - link "Inbox" [ref=f2e20] [cursor=pointer]:
+            - /url: inbox.html
+        - listitem [ref=f2e24]:
+          - link "Calendar" [ref=f2e25] [cursor=pointer]:
+            - /url: calendar.html
+        - listitem [ref=f2e29]:
+          - link "Profile" [ref=f2e30] [cursor=pointer]:
+            - /url: profile.html
+        - listitem [ref=f2e33]:
+          - link "Settings" [ref=f2e34] [cursor=pointer]:
+            - /url: settings.html
+      - list [ref=f2e39]:
+        - listitem [ref=f2e40]:
+          - link "UI Elements" [ref=f2e41] [cursor=pointer]:
+            - /url: "#"
+        - listitem [ref=f2e49]:
+          - link "Form Elements" [ref=f2e50] [cursor=pointer]:
+            - /url: "#"
+        - listitem [ref=f2e63]:
+          - link "Data tables" [ref=f2e64] [cursor=pointer]:
+            - /url: data-tables.html
+        - listitem [ref=f2e67]:
+          - link "Charts" [ref=f2e68] [cursor=pointer]:
+            - /url: charts.html
+        - listitem [ref=f2e72]:
+          - link "Auth Pages" [ref=f2e73] [cursor=pointer]:
+            - /url: "#"
+  - banner [ref=f2e79]:
+    - link [ref=f2e81] [cursor=pointer]:
+      - /url: index.html
+      - img "Logo" [ref=f2e82]
+    - generic [ref=f2e93]:
+      - generic [ref=f2e96]:
+        - button [ref=f2e97] [cursor=pointer]
+        - textbox "Type to search..." [ref=f2e101]
+      - generic [ref=f2e102]:
+        - list [ref=f2e103]:
+          - listitem [ref=f2e104]:
+            - generic [ref=f2e105]:
+              - checkbox "Sun" [ref=f2e106] [cursor=pointer]
+              - img "Sun" [ref=f2e107]
+          - listitem [ref=f2e108]:
+            - link [ref=f2e109] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=f2e115]:
+            - link [ref=f2e116] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=f2e122]:
+            - link [ref=f2e123] [cursor=pointer]:
+              - /url: "#"
+        - link "Thomas Anree UX Designer User" [ref=f2e130] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=f2e131]:
+            - generic [ref=f2e132]: Thomas Anree
+            - generic [ref=f2e133]: UX Designer
+          - img "User" [ref=f2e135]
+  - main [ref=f2e138]:
+    - generic [ref=f2e139]:
+      - generic [ref=f2e140]:
+        - generic [ref=f2e146]:
+          - generic [ref=f2e147]:
+            - heading "$3.456K" [level=4] [ref=f2e148]
+            - text: Total views
+          - generic [ref=f2e149]: 0.43%
+        - generic [ref=f2e158]:
+          - generic [ref=f2e159]:
+            - heading "$45,2K" [level=4] [ref=f2e160]
+            - text: Total Profit
+          - generic [ref=f2e161]: 4.35%
+        - generic [ref=f2e169]:
+          - generic [ref=f2e170]:
+            - heading "2.450" [level=4] [ref=f2e171]
+            - text: Total Product
+          - generic [ref=f2e172]: 2.59%
+        - generic [ref=f2e181]:
+          - generic [ref=f2e182]:
+            - heading "3.456" [level=4] [ref=f2e183]
+            - text: Total Users
+          - generic [ref=f2e184]: 0.95%
+      - generic [ref=f2e187]:
+        - generic [ref=f2e188]:
+          - generic [ref=f2e189]:
+            - heading "Sales Analytics" [level=4] [ref=f2e191]
+            - combobox [ref=f2e194]:
+              - option "Monthly" [selected]
+              - option "Yearly"
+          - img [ref=f2e202]:
+            - generic [ref=f2e204]:
+              - generic [ref=f2e205] [cursor=pointer]: Product One
+              - generic [ref=f2e207] [cursor=pointer]: Product Two
+            - generic [ref=f2e211]:
+              - generic "Sep" [ref=f2e212]
+              - generic "Oct" [ref=f2e213]
+              - generic "Nov" [ref=f2e214]
+              - generic "Dec" [ref=f2e215]
+              - generic "Jan" [ref=f2e216]
+              - generic "Feb" [ref=f2e217]
+              - generic "Mar" [ref=f2e218]
+              - generic "Apr" [ref=f2e219]
+              - generic "May" [ref=f2e220]
+              - generic "Jun" [ref=f2e221]
+              - generic "Jul" [ref=f2e222]
+              - generic "Aug" [ref=f2e223]
+            - generic [ref=f2e228]:
+              - generic "100" [ref=f2e229]
+              - generic "90" [ref=f2e230]
+              - generic "80" [ref=f2e231]
+              - generic "70" [ref=f2e232]
+              - generic "60" [ref=f2e233]
+              - generic "50" [ref=f2e234]
+              - generic "40" [ref=f2e235]
+              - generic "30" [ref=f2e236]
+              - generic "20" [ref=f2e237]
+              - generic "10" [ref=f2e238]
+              - generic "0" [ref=f2e239]
+        - generic [ref=f2e240]:
+          - generic [ref=f2e241]:
+            - heading "Sales Graph" [level=4] [ref=f2e243]
+            - combobox [ref=f2e246]:
+              - option "This Week" [selected]
+              - option "Last Week"
+          - img [ref=f2e254]:
+            - generic [ref=f2e256]:
+              - generic [ref=f2e257] [cursor=pointer]: Sales
+              - generic [ref=f2e259] [cursor=pointer]: Revenue
+            - generic [ref=f2e263]:
+              - generic "M" [ref=f2e264]
+              - generic "T" [ref=f2e265]
+              - generic "W" [ref=f2e266]
+              - generic "T" [ref=f2e267]
+              - generic "F" [ref=f2e268]
+              - generic "S" [ref=f2e269]
+              - generic "S" [ref=f2e270]
+            - generic [ref=f2e280]:
+              - generic "100" [ref=f2e281]
+              - generic "80" [ref=f2e282]
+              - generic "60" [ref=f2e283]
+              - generic "40" [ref=f2e284]
+              - generic "20" [ref=f2e285]
+              - generic "0" [ref=f2e286]
+      - generic [ref=f2e287]:
+        - heading "Order List" [level=4] [ref=f2e288]
+        - paragraph [ref=f2e289]: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ultrices lectus sem.
+        - table [ref=f2e292]:
+          - rowgroup [ref=f2e293]:
+            - row [ref=f2e294]:
+              - columnheader [ref=f2e295]:
+                - paragraph [ref=f2e296]: Customer
+              - columnheader [ref=f2e297]:
+                - paragraph [ref=f2e298]: Product
+              - columnheader [ref=f2e299]:
+                - paragraph [ref=f2e300]: Order Number
+              - columnheader [ref=f2e301]:
+                - paragraph [ref=f2e302]: Date
+              - columnheader [ref=f2e303]:
+                - paragraph [ref=f2e304]: Status
+              - columnheader [ref=f2e305]:
+                - paragraph [ref=f2e306]: Confirmation
+          - rowgroup [ref=f2e307]:
+            - row [ref=f2e308]:
+              - cell [ref=f2e309]:
+                - heading "Musharof Chowdhury" [level=5] [ref=f2e310]
+                - paragraph [ref=f2e311]: musharof@gmail.com
+              - cell [ref=f2e312]:
+                - heading "Apple Macbook Pro M1" [level=5] [ref=f2e313]
+                - paragraph [ref=f2e314]: 8/256 GB
+              - cell [ref=f2e315]:
+                - paragraph [ref=f2e316]: "#WE234343"
+              - cell [ref=f2e317]:
+                - paragraph [ref=f2e318]: 25 Dec 2024
+              - cell [ref=f2e319]:
+                - paragraph [ref=f2e320]: Pending
+              - cell [ref=f2e322]:
+                - button "Confirm Order" [ref=f2e323] [cursor=pointer]
+            - row [ref=f2e324]:
+              - cell [ref=f2e325]:
+                - heading "Shafiq Hammad" [level=5] [ref=f2e326]
+                - paragraph [ref=f2e327]: shafiq@gmail.com
+              - cell [ref=f2e328]:
+                - heading "iPhone 13 Pro Max" [level=5] [ref=f2e329]
+                - paragraph [ref=f2e330]: 4/256 GB
+              - cell [ref=f2e331]:
+                - paragraph [ref=f2e332]: "#WE234343"
+              - cell [ref=f2e333]:
+                - paragraph [ref=f2e334]: 25 Dec 2024
+              - cell [ref=f2e335]:
+                - paragraph [ref=f2e336]: Pending
+              - cell [ref=f2e338]:
+                - button "Confirm Order" [ref=f2e339] [cursor=pointer]
+            - row [ref=f2e340]:
+              - cell [ref=f2e341]:
+                - heading "Naimur Rahman" [level=5] [ref=f2e342]
+                - paragraph [ref=f2e343]: naim@gmail.com
+              - cell [ref=f2e344]:
+                - heading "Apple watch series 7" [level=5] [ref=f2e345]
+              - cell [ref=f2e346]:
+                - paragraph [ref=f2e347]: "#WE234343"
+              - cell [ref=f2e348]:
+                - paragraph [ref=f2e349]: 25 Dec 2024
+              - cell [ref=f2e350]:
+                - paragraph [ref=f2e351]: Cancelled
+              - cell [ref=f2e353]
+            - row [ref=f2e354]:
+              - cell [ref=f2e355]:
+                - heading "Jhon Smith" [level=5] [ref=f2e356]
+                - paragraph [ref=f2e357]: smith@gmail.com
+              - cell [ref=f2e358]:
+                - heading "Apple Macbook air M1" [level=5] [ref=f2e359]
+                - paragraph [ref=f2e360]: 8/256 GB
+              - cell [ref=f2e361]:
+                - paragraph [ref=f2e362]: "#WE234343"
+              - cell [ref=f2e363]:
+                - paragraph [ref=f2e364]: 25 Dec 2024
+              - cell [ref=f2e365]:
+                - paragraph [ref=f2e366]: Shipped
+              - cell [ref=f2e368]

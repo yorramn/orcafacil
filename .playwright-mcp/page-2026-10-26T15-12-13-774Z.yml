@@ -1,0 +1,140 @@
+- generic [ref=f13e3]:
+  - link "Pular para o conteúdo" [ref=f13e4] [cursor=pointer]:
+    - /url: "#taildash-main"
+  - banner [ref=f13e5]:
+    - generic [ref=f13e6]:
+      - button "Abrir menu" [ref=f13e7] [cursor=pointer]
+      - link "OrçaFácil, início" [ref=f13e10] [cursor=pointer]:
+        - /url: "#dashboard"
+        - text: O.
+    - generic [ref=f13e12]:
+      - button "Ver notificações" [ref=f13e14] [cursor=pointer]
+      - button "Abrir conta de Rafael Almeida" [ref=f13e19] [cursor=pointer]:
+        - generic [ref=f13e20]: RA
+  - main [active] [ref=f13e21]:
+    - generic [ref=f13e23]:
+      - heading "Dashboard" [level=1] [ref=f13e24]
+      - region "Indicadores do negócio" [ref=f13e25]:
+        - article [ref=f13e26]:
+          - generic [ref=f13e30]:
+            - generic [ref=f13e31]:
+              - paragraph [ref=f13e32]: R$ 12,7 mil
+              - heading "Recebido no mês" [level=2] [ref=f13e33]
+            - generic [ref=f13e34]: 8,2%
+        - article [ref=f13e37]:
+          - generic [ref=f13e42]:
+            - generic [ref=f13e43]:
+              - paragraph [ref=f13e44]: R$ 8,5 mil
+              - heading "Valores a receber" [level=2] [ref=f13e45]
+            - generic [ref=f13e46]: 4,3%
+        - article [ref=f13e49]:
+          - generic [ref=f13e61]:
+            - generic [ref=f13e62]:
+              - paragraph [ref=f13e63]: "26"
+              - heading "Propostas" [level=2] [ref=f13e64]
+            - generic [ref=f13e65]: 2,6%
+        - article [ref=f13e68]:
+          - generic [ref=f13e72]:
+            - generic [ref=f13e73]:
+              - paragraph [ref=f13e74]: "05"
+              - heading "Clientes ativos" [level=2] [ref=f13e75]
+            - generic [ref=f13e76]: 0,9%
+      - generic [ref=f13e79]:
+        - generic [ref=f13e80]:
+          - generic [ref=f13e81]:
+            - heading "Visão financeira" [level=2] [ref=f13e82]
+            - generic [ref=f13e83]: Período da visão financeira
+            - combobox "Período da visão financeira" [ref=f13e84]:
+              - option "Mensal" [selected]
+              - option "Anual"
+          - generic [ref=f13e85]:
+            - generic [ref=f13e86]: Recebido
+            - generic [ref=f13e88]: Previsto
+            - generic [ref=f13e90]: Valores em mil R$
+          - generic [ref=f13e91]:
+            - img "Comparação de valores previstos e recebidos, em milhares de reais. Dados de demonstração." [ref=f13e92]:
+              - generic [ref=f13e93]: "100"
+              - generic [ref=f13e95]: "90"
+              - generic [ref=f13e97]: "80"
+              - generic [ref=f13e99]: "70"
+              - generic [ref=f13e101]: "60"
+              - generic [ref=f13e103]: "50"
+              - generic [ref=f13e105]: "40"
+              - generic [ref=f13e107]: "30"
+              - generic [ref=f13e109]: "20"
+              - generic [ref=f13e111]: "10"
+              - generic [ref=f13e113]: "0"
+              - generic [ref=f13e119]: Jan
+              - generic [ref=f13e120]: Fev
+              - generic [ref=f13e121]: Mar
+              - generic [ref=f13e122]: Abr
+              - generic [ref=f13e123]: Mai
+              - generic [ref=f13e124]: Jun
+              - generic [ref=f13e125]: Jul
+              - generic [ref=f13e126]: Ago
+              - generic [ref=f13e127]: Set
+              - generic [ref=f13e128]: Out
+              - generic [ref=f13e129]: Nov
+              - generic [ref=f13e130]: Dez
+            - group [ref=f13e131]:
+              - generic "Ver dados do gráfico" [ref=f13e132] [cursor=pointer]
+        - generic [ref=f13e133]:
+          - generic [ref=f13e134]:
+            - heading "Recebimentos" [level=2] [ref=f13e135]
+            - generic [ref=f13e136]: Período dos recebimentos
+            - combobox "Período dos recebimentos" [ref=f13e137]:
+              - option "Esta semana" [selected]
+              - option "Semana anterior"
+          - generic [ref=f13e138]:
+            - generic [ref=f13e139]: Pix
+            - generic [ref=f13e141]: Outros
+          - img "Recebimentos por Pix e outros métodos, de segunda a domingo. Valores ilustrativos" [ref=f13e143]:
+            - generic [ref=f13e144]: "100"
+            - generic [ref=f13e146]: "80"
+            - generic [ref=f13e148]: "60"
+            - generic [ref=f13e150]: "40"
+            - generic [ref=f13e152]: "20"
+            - generic [ref=f13e154]: "0"
+            - generic [ref=f13e156]: Seg
+            - generic [ref=f13e160]: Ter
+            - generic [ref=f13e164]: Qua
+            - generic [ref=f13e168]: Qui
+            - generic [ref=f13e172]: Sex
+            - generic [ref=f13e176]: Sáb
+            - generic [ref=f13e180]: Dom
+      - generic [ref=f13e184]:
+        - heading "Orçamentos recentes" [level=2] [ref=f13e185]
+        - generic [ref=f13e187]:
+          - article [ref=f13e188]:
+            - generic [ref=f13e189]:
+              - heading "Marina Oliveira" [level=3] [ref=f13e190]
+              - generic [ref=f13e191]: Aprovado
+            - paragraph [ref=f13e193]: Pintura do apartamento
+            - generic [ref=f13e194]:
+              - generic [ref=f13e195]: "#042 · R$ 4.250,00"
+              - button "Ver cliente" [ref=f13e196] [cursor=pointer]
+          - article [ref=f13e197]:
+            - generic [ref=f13e198]:
+              - heading "Condomínio Ipê" [level=3] [ref=f13e199]
+              - generic [ref=f13e200]: Aguardando
+            - paragraph [ref=f13e202]: Manutenção elétrica
+            - generic [ref=f13e203]:
+              - generic [ref=f13e204]: "#041 · R$ 1.850,00"
+              - button "Ver cliente" [ref=f13e205] [cursor=pointer]
+          - article [ref=f13e206]:
+            - generic [ref=f13e207]:
+              - heading "Pedro Costa" [level=3] [ref=f13e208]
+              - generic [ref=f13e209]: Aguardando
+            - paragraph [ref=f13e211]: Instalação de luminárias
+            - generic [ref=f13e212]:
+              - generic [ref=f13e213]: "#040 · R$ 960,00"
+              - button "Ver cliente" [ref=f13e214] [cursor=pointer]
+          - article [ref=f13e215]:
+            - generic [ref=f13e216]:
+              - heading "Juliana Martins" [level=3] [ref=f13e217]
+              - generic [ref=f13e218]: Recusado
+            - paragraph [ref=f13e220]: Pintura da fachada
+            - generic [ref=f13e221]:
+              - generic [ref=f13e222]: "#039 · R$ 6.400,00"
+              - button "Ver cliente" [ref=f13e223] [cursor=pointer]
+      - paragraph [ref=f13e224]: Valores e percentuais de demonstração. Não representam resultados reais.

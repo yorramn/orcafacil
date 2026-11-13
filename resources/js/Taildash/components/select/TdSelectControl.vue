@@ -1,0 +1,7 @@
+<script setup lang="ts">
+type Option = { value: string; label: string; disabled?: boolean }
+const props = withDefaults(defineProps<{ id: string; label: string; options: Option[]; modelValue?: string; disabled?: boolean; required?: boolean; error?: string; externalLabel?: boolean }>(), { modelValue: '' })
+const emit = defineEmits<{ 'update:modelValue': [value: string] }>()
+defineExpose({ focus: () => document.getElementById(props.id)?.focus() })
+</script>
+<template><div class="relative"><label v-if="!externalLabel" :for="id" class="mb-2 block text-sm font-medium text-gray-700 dark:text-gray-400">{{ label }}</label><select :id="id" :value="modelValue" :disabled="disabled" :required="required" class="w-full appearance-none rounded-lg border border-gray-300 bg-transparent px-4 py-3 pr-10 text-sm text-gray-800 shadow-theme-xs outline-none focus:border-brand-300 focus:ring-3 focus:ring-brand-500/10 disabled:bg-gray-100 dark:border-gray-700 dark:bg-gray-900 dark:text-white/90" @change="emit('update:modelValue', ($event.target as HTMLSelectElement).value)"><option v-for="option in options" :key="option.value" :value="option.value" :disabled="option.disabled">{{ option.label }}</option></select><span class="pointer-events-none absolute right-4 top-1/2 -translate-y-1/2 text-gray-500" aria-hidden="true">⌄</span><p v-if="error" class="mt-2 text-sm text-error-500">{{ error }}</p></div></template>

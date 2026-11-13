@@ -1,0 +1,174 @@
+- generic [ref=f2e3]:
+  - link "Pular para o conteúdo" [ref=f2e4] [cursor=pointer]:
+    - /url: "#taildash-main"
+  - banner [ref=f2e5]:
+    - link "OrçaFácil, início" [ref=f2e7] [cursor=pointer]:
+      - /url: "#dashboard"
+      - generic [ref=f2e8]: OrçaFácil
+    - generic [ref=f2e13]:
+      - search [ref=f2e14]:
+        - generic [ref=f2e17]: Pesquisar clientes
+        - searchbox "Pesquisar clientes" [ref=f2e18]
+      - generic [ref=f2e19]:
+        - generic [ref=f2e20]: Prévia visual
+        - button "Ver notificações" [ref=f2e22] [cursor=pointer]
+        - button "Abrir conta de Rafael Almeida" [ref=f2e27] [cursor=pointer]:
+          - generic [ref=f2e28]:
+            - generic [ref=f2e29]: Rafael Almeida
+            - generic [ref=f2e30]: Almeida Serviços
+          - generic [ref=f2e31]: RA
+  - complementary [ref=f2e34]:
+    - navigation "Navegação principal" [ref=f2e35]:
+      - link "Dashboard" [ref=f2e36] [cursor=pointer]:
+        - /url: "#dashboard"
+      - link "Clientes" [ref=f2e42] [cursor=pointer]:
+        - /url: "#clientes"
+      - generic [ref=f2e45]: Orçamentos
+      - generic [ref=f2e49]: Serviços
+      - generic [ref=f2e53]: Recebimentos
+      - generic [ref=f2e57]: Demais módulos na próxima etapa
+      - button "Acesso" [ref=f2e59] [cursor=pointer]
+    - generic [ref=f2e65]:
+      - paragraph [ref=f2e66]: Avaliação do novo layout
+      - paragraph [ref=f2e67]: Login, cadastro, dashboard e clientes.
+      - link "Ver protótipos anteriores" [ref=f2e68] [cursor=pointer]:
+        - /url: /prototypes?version=original#dashboard
+  - main [active] [ref=f2e69]:
+    - generic [ref=f2e71]:
+      - heading "Dashboard" [level=1] [ref=f2e72]
+      - region "Indicadores do negócio" [ref=f2e73]:
+        - article [ref=f2e74]:
+          - generic [ref=f2e78]:
+            - generic [ref=f2e79]:
+              - paragraph [ref=f2e80]: R$ 12,7 mil
+              - heading "Recebido no mês" [level=2] [ref=f2e81]
+            - generic [ref=f2e82]: 8,2%
+        - article [ref=f2e85]:
+          - generic [ref=f2e90]:
+            - generic [ref=f2e91]:
+              - paragraph [ref=f2e92]: R$ 8,5 mil
+              - heading "Valores a receber" [level=2] [ref=f2e93]
+            - generic [ref=f2e94]: 4,3%
+        - article [ref=f2e97]:
+          - generic [ref=f2e109]:
+            - generic [ref=f2e110]:
+              - paragraph [ref=f2e111]: "26"
+              - heading "Propostas enviadas" [level=2] [ref=f2e112]
+            - generic [ref=f2e113]: 2,6%
+        - article [ref=f2e116]:
+          - generic [ref=f2e120]:
+            - generic [ref=f2e121]:
+              - paragraph [ref=f2e122]: "05"
+              - heading "Clientes ativos" [level=2] [ref=f2e123]
+            - generic [ref=f2e124]: 0,9%
+      - generic [ref=f2e127]:
+        - generic [ref=f2e128]:
+          - generic [ref=f2e129]:
+            - heading "Visão financeira" [level=2] [ref=f2e130]
+            - generic [ref=f2e131]: Período da visão financeira
+            - combobox "Período da visão financeira" [ref=f2e132]:
+              - option "Mensal" [selected]
+              - option "Anual"
+          - generic [ref=f2e133]:
+            - generic [ref=f2e134]: Previsto
+            - generic [ref=f2e136]: Recebido
+            - generic [ref=f2e138]: Valores em mil R$
+          - generic [ref=f2e139]:
+            - img "Comparação de valores previstos e recebidos, em milhares de reais. Dados de demonstração." [ref=f2e140]:
+              - generic [ref=f2e141]: "100"
+              - generic [ref=f2e143]: "80"
+              - generic [ref=f2e145]: "60"
+              - generic [ref=f2e147]: "40"
+              - generic [ref=f2e149]: "20"
+              - generic [ref=f2e151]: "0"
+              - generic [ref=f2e157]: Jan
+              - generic [ref=f2e158]: Fev
+              - generic [ref=f2e159]: Mar
+              - generic [ref=f2e160]: Abr
+              - generic [ref=f2e161]: Mai
+              - generic [ref=f2e162]: Jun
+              - generic [ref=f2e163]: Jul
+              - generic [ref=f2e164]: Ago
+              - generic [ref=f2e165]: Set
+              - generic [ref=f2e166]: Out
+              - generic [ref=f2e167]: Nov
+              - generic [ref=f2e168]: Dez
+            - group [ref=f2e169]:
+              - generic "Ver dados do gráfico" [ref=f2e170] [cursor=pointer]
+        - generic [ref=f2e171]:
+          - generic [ref=f2e172]:
+            - heading "Recebimentos" [level=2] [ref=f2e173]
+            - generic [ref=f2e174]: Período dos recebimentos
+            - combobox "Período dos recebimentos" [ref=f2e175]:
+              - option "Esta semana" [selected]
+              - option "Semana anterior"
+          - generic [ref=f2e176]:
+            - generic [ref=f2e177]: Previsto
+            - generic [ref=f2e179]: Recebido
+          - img "Recebimentos previstos e recebidos de segunda a domingo, valores ilustrativos" [ref=f2e181]:
+            - generic [ref=f2e182]: "100"
+            - generic [ref=f2e184]: "80"
+            - generic [ref=f2e186]: "60"
+            - generic [ref=f2e188]: "40"
+            - generic [ref=f2e190]: "20"
+            - generic [ref=f2e192]: "0"
+            - generic [ref=f2e194]: Seg
+            - generic [ref=f2e198]: Ter
+            - generic [ref=f2e202]: Qua
+            - generic [ref=f2e206]: Qui
+            - generic [ref=f2e210]: Sex
+            - generic [ref=f2e214]: Sáb
+            - generic [ref=f2e218]: Dom
+      - generic [ref=f2e222]:
+        - heading "Orçamentos recentes" [level=2] [ref=f2e223]
+        - table [ref=f2e225]:
+          - rowgroup [ref=f2e226]:
+            - row [ref=f2e227]:
+              - columnheader "Cliente" [ref=f2e228]
+              - columnheader "Serviço" [ref=f2e229]
+              - columnheader "Orçamento" [ref=f2e230]
+              - columnheader "Valor" [ref=f2e231]
+              - columnheader "Status" [ref=f2e232]
+              - columnheader "Acompanhamento" [ref=f2e233]
+          - rowgroup [ref=f2e234]:
+            - row [ref=f2e235]:
+              - cell [ref=f2e236]:
+                - paragraph [ref=f2e237]: Marina Oliveira
+                - paragraph [ref=f2e238]: marina@example.com
+              - cell "Pintura do apartamento" [ref=f2e239]
+              - cell "#042" [ref=f2e240]
+              - cell "R$ 4.250,00" [ref=f2e241]
+              - cell "Aprovado" [ref=f2e242]
+              - cell [ref=f2e245]:
+                - button "Ver cliente" [ref=f2e246] [cursor=pointer]
+            - row [ref=f2e247]:
+              - cell [ref=f2e248]:
+                - paragraph [ref=f2e249]: Condomínio Ipê
+                - paragraph [ref=f2e250]: ipe@example.com
+              - cell "Manutenção elétrica" [ref=f2e251]
+              - cell "#041" [ref=f2e252]
+              - cell "R$ 1.850,00" [ref=f2e253]
+              - cell "Aguardando" [ref=f2e254]
+              - cell [ref=f2e257]:
+                - button "Ver cliente" [ref=f2e258] [cursor=pointer]
+            - row [ref=f2e259]:
+              - cell [ref=f2e260]:
+                - paragraph [ref=f2e261]: Pedro Costa
+                - paragraph [ref=f2e262]: pedro@example.com
+              - cell "Instalação de luminárias" [ref=f2e263]
+              - cell "#040" [ref=f2e264]
+              - cell "R$ 960,00" [ref=f2e265]
+              - cell "Aguardando" [ref=f2e266]
+              - cell [ref=f2e269]:
+                - button "Ver cliente" [ref=f2e270] [cursor=pointer]
+            - row [ref=f2e271]:
+              - cell [ref=f2e272]:
+                - paragraph [ref=f2e273]: Juliana Martins
+                - paragraph [ref=f2e274]: juliana@example.com
+              - cell "Pintura da fachada" [ref=f2e275]
+              - cell "#039" [ref=f2e276]
+              - cell "R$ 6.400,00" [ref=f2e277]
+              - cell "Recusado" [ref=f2e278]
+              - cell [ref=f2e281]:
+                - button "Ver cliente" [ref=f2e282] [cursor=pointer]
+      - paragraph [ref=f2e283]: Valores e percentuais de demonstração. Não representam resultados reais.

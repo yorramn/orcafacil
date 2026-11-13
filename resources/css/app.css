@@ -1,0 +1,36 @@
+@import './tailadmin-source.css';
+
+@source '../js/TailAdminSource';
+@source '../js/Components';
+@source '../js/Pages';
+@source '../views/app.blade.php';
+
+@theme inline {
+  --font-sans: var(--font-outfit);
+  --color-td-primary: var(--color-brand-500);
+  --color-td-ink: var(--color-gray-900);
+  --color-td-body: var(--color-gray-500);
+  --color-td-bg: var(--color-gray-50);
+  --color-td-soft: var(--color-gray-100);
+  --color-td-icon: var(--color-gray-100);
+  --color-td-border: var(--color-gray-200);
+  --color-td-green: var(--color-success-500);
+  --color-td-green-ink: var(--color-success-700);
+  --color-td-red: var(--color-error-500);
+  --color-td-amber: var(--color-warning-500);
+  --color-td-amber-ink: var(--color-warning-700);
+  --shadow-td-card: var(--shadow-theme-sm);
+  --shadow-td-sidebar: var(--shadow-theme-lg);
+}
+
+@layer base {
+  body { @apply bg-gray-50 font-outfit text-gray-500 antialiased; }
+  .dark body { @apply bg-gray-900 text-gray-400; }
+}
+
+@layer components {
+  .skip-link { @apply focus:translate-y-0 focus-visible:outline-2 focus-visible:outline-brand-500; }
+  .required-field-invalid { border-color: var(--color-error-500) !important; }
+  .required-field-invalid:focus-visible { box-shadow: 0 0 0 3px color-mix(in srgb, var(--color-error-500) 16%, transparent); }
+  .required-field-error { color: var(--color-error-600); }
+}

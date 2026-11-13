@@ -1,0 +1,22 @@
+<script setup lang="ts">
+import { formatDateTimeBR } from '../../utils/dateDisplay'
+import { computed, onBeforeUnmount, shallowRef } from 'vue'
+import { router } from '@inertiajs/vue3'
+import ResourceList from '../../Components/ResourceList.vue'
+const rawProps = withDefaults(defineProps<{ activity?: any[] | { data?: any[]; links?: any[]; from?: number; to?: number; total?: number }; loading?: boolean; error?: boolean; search?: string; status?: string; sort?: string; direction?: 'asc' | 'desc' }>(), { activity: () => [], loading: false, error: false, search: '', status: '', sort: 'created_at', direction: 'desc' })
+const props = computed(() => ({ ...rawProps, activity: normalize(rawProps.activity) }))
+const search = shallowRef(rawProps.search)
+const status = shallowRef(rawProps.status)
+const sort = shallowRef(rawProps.sort)
+const direction = shallowRef<'asc' | 'desc'>(rawProps.direction)
+let searchTimer: ReturnType<typeof setTimeout> | undefined
+function normalize(value: any) { return Array.isArray(value) ? value : Object.assign([...(value?.data || [])], value || {}) }
+function applyFilters() { if (searchTimer) clearTimeout(searchTimer); router.get('/activity', { search: search.value || undefined, status: status.value || undefined, sort: sort.value, direction: direction.value }, { preserveState: true, preserveScroll: true, replace: true }) }
+function searchChanged(value: string) { search.value = value; if (searchTimer) clearTimeout(searchTimer); searchTimer = setTimeout(applyFilters, 350) }
+function statusChanged(value: string) { status.value = value; applyFilters() }
+function sortChanged(value: { sort: string; direction: 'asc' | 'desc' }) { sort.value = value.sort; direction.value = value.direction; applyFilters() }
+function clearFilters() { search.value = ''; status.value = ''; applyFilters() }
+function categoryLabel(event: string) { const prefix = event?.split('.')[0]; return prefix === 'quote' ? 'Orçamento' : prefix === 'service' ? 'Serviço' : prefix === 'receivable' ? 'Recebimento' : 'Geral' }
+onBeforeUnmount(() => { if (searchTimer) clearTimeout(searchTimer) })
+</script>
+<template><ResourceList title="Atividade" active="activity" description="Acompanhe mudanças importantes da operação sem expor segredos, tokens ou códigos." :items="props.activity" :loading="props.loading" :error="props.error" searchable :search="search" status-label="Tipo de evento" :status="status" :status-options="[{ value: '', label: 'Todos os eventos' }, { value: 'quotes', label: 'Orçamentos' }, { value: 'services', label: 'Serviços' }, { value: 'receivables', label: 'Recebimentos' }, { value: 'other', label: 'Outros' }]" :sort="sort" :sort-direction="direction" :sort-options="[{ value: 'created_at', label: 'Data do evento' }, { value: 'event', label: 'Nome do evento' }]" :filter-active="Boolean(search || status)" empty-title="Nenhuma atividade ainda" @search="searchChanged" @status-change="statusChanged" @sort-change="sortChanged" @clear="clearFilters"><template #table><thead><tr><th>Evento</th><th>Responsável</th><th>Quando</th><th>Tipo</th></tr></thead><tbody><tr v-for="event in props.activity" :key="event.id"><td><strong>{{ event.description || event.event }}</strong><span>{{ event.subject_name || 'Registro da operação' }}</span></td><td>{{ event.actor?.name || event.actor_name || 'Sistema' }}</td><td>{{ formatDateTimeBR(event.occurred_at) }}</td><td>{{ categoryLabel(event.event) }}</td></tr></tbody></template><template #cards><article v-for="event in props.activity" :key="event.id" class="record-card flex min-w-0 flex-col gap-4 rounded-xl border border-gray-200 bg-white p-4 shadow-theme-sm [&_h3]:text-base [&_h3]:font-semibold [&_h3]:leading-6 [&_h3]:text-td-ink [&_dl]:grid [&_dl]:grid-cols-2 [&_dl]:gap-4 [&_dt]:text-sm [&_dt]:text-td-body [&_dd]:mt-1 [&_dd]:font-medium [&_dd]:text-td-ink"><div class="record-card__top flex min-w-0 flex-wrap items-start justify-between gap-3 [&>div]:min-w-0 [&_span]:text-sm [&_span]:leading-5"><div><h3>{{ event.description || event.event }}</h3><span>{{ formatDateTimeBR(event.occurred_at) }}</span></div><span class="status-badge inline-flex items-center gap-2 self-start rounded-full bg-td-icon px-3 py-1 text-sm font-medium leading-5 text-td-body">{{ categoryLabel(event.event) }}</span></div><p class="form-help block text-sm leading-5 text-td-body">{{ event.actor?.name || event.actor_name || 'Sistema' }}</p></article></template></ResourceList></template>

@@ -1,0 +1,61 @@
+{
+  "interface_type": "dashboard",
+  "interface_type_note": "Tela de detalhes de um orçamento, avaliada por leitura do componente Vue. A API do uxui-evaluator não está configurada; não houve inspeção visual autenticada.",
+  "overall_score": 69,
+  "band": "good",
+  "findings": [
+    {
+      "id": "finding-1",
+      "principle": { "code": "D.2.1.02", "slug": "visual-hierarchy", "title": "Visual Hierarchy", "part": "part-3" },
+      "severity": "warning",
+      "message": "O total e o cliente ficam dentro do cartão de itens, abaixo das ações e sem resumo da proposta. O usuário precisa percorrer a tabela para entender valor e destinatário.",
+      "remediation": "Colocar status, cliente, total e datas em um resumo imediatamente após o cabeçalho, com total em maior destaque.",
+      "business_impact": null
+    },
+    {
+      "id": "finding-2",
+      "principle": { "code": "F.1.1.02", "slug": "cognitive-load", "title": "Cognitive Load", "part": "part-1" },
+      "severity": "warning",
+      "message": "Editar, enviar, reenviar ou baixar competem no cabeçalho, enquanto detalhes do link e arquivos aparecem sem distinção clara entre ações principais e secundárias.",
+      "remediation": "Manter apenas a ação de distribuição pertinente ao estado como primária; deixar Editar e acesso ao histórico como ações secundárias, agrupando link e arquivos em cartões próprios.",
+      "business_impact": null
+    },
+    {
+      "id": "finding-3",
+      "principle": { "code": "F.1.1.03", "slug": "mental-model", "title": "Mental Model", "part": "part-1" },
+      "severity": "warning",
+      "message": "A tabela mostra somente o valor final de cada item e não permite conferir preço unitário ou desconto; o total do orçamento também não revela desconto e acréscimo gerais.",
+      "remediation": "Exibir quantidade, preço unitário, desconto e total por item, seguidos por subtotal, desconto, acréscimo e total do orçamento.",
+      "business_impact": null
+    },
+    {
+      "id": "finding-4",
+      "principle": { "code": "D.1.1.01", "slug": "progressive-disclosure", "title": "Progressive Disclosure", "part": "part-3" },
+      "severity": "warning",
+      "message": "O formulário de anexo está permanentemente aberto e a seção de notas aparece mesmo vazia, aumentando a altura e o ruído da tela.",
+      "remediation": "Abrir o formulário somente ao acionar Anexar arquivo e mostrar notas apenas quando houver conteúdo; manter a lista de anexos visível.",
+      "business_impact": null
+    },
+    {
+      "id": "finding-5",
+      "principle": { "code": "I.2.2.02", "slug": "fitts-law", "title": "Fitts's Law", "part": "part-4" },
+      "severity": "suggestion",
+      "message": "Dados de cliente e validade estão em texto pequeno junto ao título dos itens, o que prejudica leitura rápida em telas estreitas.",
+      "remediation": "Usar rótulos curtos e valores em blocos responsivos no resumo, com alvos de ação de pelo menos 44 px.",
+      "business_impact": null
+    }
+  ],
+  "strengths": [
+    {
+      "principle": { "code": "C.1.1.01", "slug": "consistency-and-standards", "title": "Consistency and Standards" },
+      "message": "A página já reutiliza PageHeader, StatusBadge, ConfirmModal e componentes de tabela do sistema."
+    },
+    {
+      "principle": { "code": "C.1.4.01", "slug": "error-prevention", "title": "Error Prevention" },
+      "message": "Reenvio e exclusão de anexos já exigem confirmação; erros de upload e limite de arquivo são informados."
+    }
+  ],
+  "priority_fixes": ["finding-1", "finding-3", "finding-2", "finding-4", "finding-5"],
+  "api_enriched": false,
+  "api_note": "UXUI_API_KEY não configurada; auditoria manual baseada na estrutura do componente e nas diretrizes locais."
+}
